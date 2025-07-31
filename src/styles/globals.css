@@ -1,0 +1,38 @@
+/* src/styles/globals.css */
+
+/* ...existing reset styles... */
+
+.theme-toggle-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary);
+  color: var(--bg);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.theme-toggle-fixed:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+/* src/styles/globals.css */
+
+html, body {
+  height: 100%;
+  background-color: var(--bg);   /* THEME BACKGROUND */
+  color: var(--text);            /* THEME TEXT */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
